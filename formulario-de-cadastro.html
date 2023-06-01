@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      /* Estilos CSS */
+
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .container {
+          max-width: 400px;
+          margin: 20px auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+        
+        label {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select,
+        input[type="submit"],
+        input[type="file"] {
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        textarea {
+          resize: vertical;
+        }
+        
+        input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário de Cadastro de Dados</h1>
+    <form class="lde-form" method="POST">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="telefone">Telefone/WhatsApp</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" name="bairro" required>
+
+      <label for="estados">Estado</label>
+      <select id="estados" name="estados" required>
+        <option value="" disabled selected>Selecione o estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+
+      <label for="ocorrido">Breve Descrição do Ocorrido</label>
+      <textarea id="ocorrido" name="ocorrido" required></textarea>
+
+      <label for="file">Arquivo</label>
+      <input type="file" name="file" class="form-control" accept="application/pdf, image/*" required>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+  </html>
